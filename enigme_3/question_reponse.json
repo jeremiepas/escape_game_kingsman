@@ -1,0 +1,16 @@
+{
+  "partie_1":
+  {
+    "introduction": "bonjour!",
+    "attendu": [ "bonjour!",  "hello!", "bonjour" ],
+    "reponse":{"bonjour!": "comment tu vas?", "hello!":"tu parle anglais", "bonjour":"comment tu t'appelle?"},
+    "reponse_erreur": ["je te dis bonjour", "tu peut me repondre en anglais si tu veux."]
+  },
+  "comment tu vas?":
+  {
+    "introduction": "bonjour!",
+    "attendu": [ "bonjour!",  "hello!", "bonjour" ],
+    "reponse":{"bonjour!": "comment tu vas?", "hello!":"tu parle anglais", "bonjour":"comment tu t'appelle?"},
+    "reponse_erreur": ["je te dis bonjour", "tu peut me repondre en anglais si tu veux."]
+  }
+}
