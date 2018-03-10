@@ -10,18 +10,19 @@ Servo mouve_roie;  // create servo object to control a servo
 
 bool echeque = false;
 bool echeque_math = false;
-
-int reset_pin = 12;
-int reine = 2;
-int roie  = 3;
-int cavalier_2 = 4;
-int fou = A0;
-int cavalier = A1;
+int  affiche_code =  6;
+int  reset_pin = 12;
+int  reine = 2;
+int  roie  = 3;
+int  cavalier_2 = 4;
+int  fou = A0;
+int  cavalier = A1;
 
 void setup() {
   Serial.begin(9600); // start serial for output
   digitalWrite(reset_pin, HIGH);
   delay(200);
+  pinMode(affiche_code, OUTPUT);
   pinMode(reset_pin, OUTPUT);
   digitalWrite(reset_pin, HIGH);
   
@@ -44,20 +45,20 @@ void setup() {
 void loop() {
 //    Serial.println(placement_fou());
 Serial.println(placement_roie());
-//Serial.println(placement_cavalier());
-//Serial.println(analogRead(cavalier));
+// Serial.println(placement_cavalier());
+// Serial.println(analogRead(cavalier));
 
   if (placement_fou() && placement_cavalier() && placement_reine() && placement_roie()) {
     echeque = true;
-    Serial.println(placment_2());
-
     mouve_roie.write(50); 
   }
   if (echeque && placement_fou() && placement_cavalier() && !placement_reine() && placement_roie() && placment_2()){
     echeque_math = true;
   }
   if (echeque_math) {
-    Serial.println();
+    digitalWrite(affiche_code, HIGH);
+  } else {
+    digitalWrite(affiche_code, LOW);
   }
   delay(10);
 
@@ -88,13 +89,13 @@ void receiveData(int byteCount){
   int x = Wire.read();   // receive byte as an integer
   Serial.println(x);
   if(x == 2) {
-   digitalWrite(reset_pin, LOW);   
+    digitalWrite(reset_pin, LOW);
   }
   if (x == 1) {
     echeque_math = true;
   }
-  if(x != 0) {
-    delay(1000);
+  if (x == 0) {
+    echeque_math = false;
   }
 }
 
