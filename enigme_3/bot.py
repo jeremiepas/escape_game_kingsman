@@ -13,7 +13,7 @@ while v != "1":
     r = requests.get(server+'enigme_bot')
     v = r.text
     sleep(0.5)
-os.system('cvlc --no-audio --play-and-exit -V caca Connexion.mp4')
+os.system('cvlc --no-audio --play-and-exit -V caca ascii-video-kingsmen5.mp4')
 print(histoire['partie_1']['introduction']+"\n")
 partie = "partie_1"
 
