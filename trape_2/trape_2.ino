@@ -19,7 +19,8 @@ void setup() {
 void loop() {
   
   // put your main code here, to run repeatedly:
-  if (digitalRead(interupteur) == 0){
+  
+  if (digitalRead(interupteur) == 1) {
      etat_porte = (etat_porte)? false : true;
      delay(1000);
   }
