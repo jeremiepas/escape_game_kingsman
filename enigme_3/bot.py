@@ -19,7 +19,7 @@ def bot():
             bot()
         v = r.text
         sleep(0.5)
-    os.system('cvlc --no-audio --play-and-exit -V caca asciikingsmen1000.mp4')
+    os.system('cvlc --no-audio --play-and-exit -V caca kingsmen-infiltrator-mission.mp4')
     print(histoire['partie_1']['introduction']+"\n")
     partie = "partie_1"
     faut = 0
