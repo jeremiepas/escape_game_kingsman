@@ -28,7 +28,6 @@ def bot():
             bot()
         try:
             b = requests.get(server+'enigme_bot/reload')
-            print(b.text)
             var = input("#> ")
             if var in histoire[partie]['attendu']:
                 if partie == "partie_2":
