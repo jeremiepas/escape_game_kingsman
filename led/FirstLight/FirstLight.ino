@@ -8,14 +8,14 @@
                           // NEO_KHZ400 400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers)
                           // NEO_GRB Pixels are wired for GRB bitstream (most NeoPixel products)
                           // NEO_RGB Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
-    Adafruit_NeoPixel strip = Adafruit_NeoPixel(61, PIN, NEO_GRB + NEO_KHZ800);
+    Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);
    
     
    
  int i = 0;
  byte colors[5] = {0, 0, 0, 0, 0};
  byte lineEnding = 0x0A;
- int bytesRead;eponse['id']
+ int bytesRead; //eponse['id']
 // the setup routine runs once when you press reset:
     void setup() {
         Serial.begin(115200);  // start serial for output

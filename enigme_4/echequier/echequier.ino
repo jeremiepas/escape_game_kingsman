@@ -12,9 +12,9 @@ bool echeque = false;
 bool echeque_math = false;
 int  affiche_code =  6;
 int  reset_pin = 12;
-int  reine = 2;
-int  roie  = 3;
-int  cavalier_2 = 4;
+int  reine = 3;
+int  roie  = 4;
+int  cavalier_2 = A2;
 int  fou = A0;
 int  cavalier = A1;
 
@@ -29,7 +29,7 @@ void setup() {
   pinMode(roie, INPUT);
   pinMode(fou, INPUT);
   pinMode(reine, INPUT);
-  pinMode(cavalier_2, INPUT);
+  pinMode(cavalier, INPUT);
   
   // define callbacks for i2c communication
   Wire.begin(SLAVE_ADDRESS);
@@ -44,15 +44,15 @@ void setup() {
 
 void loop() {
 //    Serial.println(placement_fou());
-Serial.println(placement_roie());
-// Serial.println(placement_cavalier());
-// Serial.println(analogRead(cavalier));
+//Serial.println(digitalRead(roie));
+ Serial.println(digitalRead(cavalier_2));
+// Serial.println(analogRead(fou));
 
   if (placement_fou() && placement_cavalier() && placement_reine() && placement_roie()) {
     echeque = true;
     mouve_roie.write(50); 
   }
-  if (echeque && placement_fou() && placement_cavalier() && !placement_reine() && placement_roie() && placment_2()){
+  if (echeque && placement_fou() && !placement_cavalier() && placement_reine() && placement_roie() && placment_2()){
     echeque_math = true;
   }
   if (echeque_math) {
@@ -65,7 +65,7 @@ Serial.println(placement_roie());
 }
 
 bool placement_roie(){
-  return (digitalRead(roie) != 0);
+  return (digitalRead(roie) == 0);
 }
 bool placement_fou(){
  return (digitalRead(fou) == 0) ;

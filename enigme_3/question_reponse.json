@@ -1,16 +1,48 @@
 {
   "partie_1":
   {
-    "introduction": "bonjour!",
-    "attendu": [ "bonjour!",  "hello!", "bonjour" ],
-    "reponse":{"bonjour!": "comment tu vas?", "hello!":"tu parle anglais", "bonjour":"comment tu t'appelle?"},
-    "reponse_erreur": ["je te dis bonjour", "tu peut me repondre en anglais si tu veux."]
+    "introduction": "\nBienvenue dans la cache MI6\n\nVous venez de rentrer de l’espace de piratage des KINGSMENs.!\n\nAgent,Veuillez décliner votre identité",
+    "attendu": [
+      "Chester King",
+      "chester king",
+      "King Chester",
+      "KING CHESTER",
+      "CHESTER KING",
+      "king chester",
+      "kingchester",
+      "chester",
+      "chester kin",
+      "king chestr",
+      "king"],
+    "reponse": "partie_2",
+    "reponse_erreur": [
+      "Réponse erronée",
+      "Mauvaise réponse",
+      "Mauvaise réponse",
+      "1 essai restant - Sécurisation du compte - Verrouillage imminent",
+      "Identité oubliée ? La réponse est l’identité réelle du roi de la Table Ronde ?"
+    ]
   },
-  "comment tu vas?":
+  "partie_2":
   {
-    "introduction": "bonjour!",
-    "attendu": [ "bonjour!",  "hello!", "bonjour" ],
-    "reponse":{"bonjour!": "comment tu vas?", "hello!":"tu parle anglais", "bonjour":"comment tu t'appelle?"},
-    "reponse_erreur": ["je te dis bonjour", "tu peut me repondre en anglais si tu veux."]
+    "introduction": "Commande d’ouverture du passage sous tension\nOuverture de la porte d’accès imminent\nActiver le mécanisme ? Y - N\n",
+    "attendu": [ "Yes", "yes", "YES", "Y", "y"],
+    "reponse": "partie_3",
+    "reponse_erreur": ["Le système de contrôle ne comprend pas, vous voulez rester dans cette pièce ?", "Réponse invalide"]
+  },
+
+  "partie_3":
+  {
+    "introduction": "MESSAGE SUCCES\n\nBienvenue dans votre cache d’espion Agent Arthur\n>>>> AGENT RECONNU >>>IDENTIFICATION COMPLETE\n\n>>>>>>> OUVERTURE DU PASSAGE SECRET <<<<<<<<<",
+    "attendu": ["9467"],
+    "reponse":  "partie_4",
+    "reponse_erreur": ["Réponse erronée", "Réponse invalide", "Mauvaise réponse"]
+  },
+  "partie_4":
+  {
+  "introduction": "SECURITE ACTIVEE\n\n>>>>>> OUVERTURE DU SAS EN COURS <<<<<<<<\n>>>>>BASE DE CONTROLE ACCESSIBLE<<<<<",
+  "attendu": ["completement rien 123"],
+  "reponse":  "partie_1",
+  "reponse_erreur": ["Réponse erronée", "Réponse invalide", "Mauvaise réponse"]
   }
 }
