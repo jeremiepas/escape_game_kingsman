@@ -5,7 +5,7 @@ from time import sleep
 from pprint import pprint
 
 def bot():
-    server = "http://localhost:5000/"
+    server = "http://192.168.1.90:5000/"
     os.system("clear")
     print("\n")
     with open('./question_reponse.json', 'r') as json_data:
