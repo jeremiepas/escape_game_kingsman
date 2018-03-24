@@ -36,10 +36,10 @@ def bot():
                     r = requests.post(server+'enigme_bot/bot/1', data = {'porte': '3', "etat": '1'})
                 partie = histoire[partie]["reponse"]
                 print("#>"+ histoire[partie]["introduction"])
-            elif var == "exit":
-                exit()
-            elif var == "reboot":
-                bot()
+            # elif var == "exit":
+            #     exit()
+            # elif var == "reboot":
+            #     bot()
                  # goto check
             else:
                 if len(histoire[partie]['reponse_erreur']) <= faut:
