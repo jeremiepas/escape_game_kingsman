@@ -12,11 +12,11 @@ pression différente sur 4 porte manteau ouvre une trappe.
  A2 = porte menteaux trois ecoute
  A3 = porte menteaux quatre ecoute
 ```
-* communication Raspberry
+* communication
 
 ```
-A4 = sda connection rasberry
-A5 = scl connection rasberry
+A4 = sda connexion
+A5 = scl connexion
 ```
 
 ####  définir les valeurs des capteur
