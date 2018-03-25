@@ -30,17 +30,18 @@ A5 = scl connection rasberry
 
   1. ouvrir le fichier __code/enigme_1/enigme_1_guerande/enigme_1_guerande.ino__ avec l’éditeur Arduino.
 
-    ![open file with ide Arduino](./img_for_readme/open_file_with_ide_Arduino.png)
+      ![open file with ide Arduino](./img_for_readme/open_file_with_ide_Arduino.png)
 
   2. modifie la ligne ```Serial.println(analogRead(portementeau4));``` et remplace le chiffre 4 par la valeur du porte mentaux voulu.
 
-    ![highlights code on ide Arduino](./img_for_readme/change_ligne_serial.png)
+      ![highlights code on ide Arduino](./img_for_readme/change_ligne_serial.png)
 
   3. Téléverser le code modifie sur la carte en cliquant en haut a gauche sur la flèche.
 
-    ![highlights code on ide Arduino](./img_for_readme/televerse_ide_arduino.png)
+      ![highlights code on ide Arduino](./img_for_readme/televerse_ide_arduino.png)
+
+    * choisir le bon port et le bon type de carte  
 
   4. ouvrir le __traceur série__ en cliquant sur __outils__ puis __traceur série__.
 
       ![place sourie on traceur serie](./img_for_readme/place_sourie_on_traceur_serie.png)
-    
