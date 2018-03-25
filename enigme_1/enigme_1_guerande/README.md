@@ -38,9 +38,9 @@ A5 = scl connection rasberry
 
   3. Téléverser le code modifie sur la carte en cliquant en haut a gauche sur la flèche.
 
-      ![highlights code on ide Arduino](./img_for_readme/televerse_ide_arduino.png)
+      * choisir le bon port et le bon type de carte  
 
-    * choisir le bon port et le bon type de carte  
+      ![highlights code on ide Arduino](./img_for_readme/televerse_ide_arduino.png)
 
   4. ouvrir le __traceur série__ en cliquant sur __outils__ puis __traceur série__.
 
