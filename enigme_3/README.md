@@ -9,7 +9,6 @@
   password = raspberry
 ```
   * **lancement bot**
-
-  ``` sh bot.sh ```
-  ou
-  ``` bot.sh ```
+``` sh bot.sh ```
+ou
+``` bot.sh ```
