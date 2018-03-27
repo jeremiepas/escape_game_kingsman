@@ -11,12 +11,15 @@ pression différente sur 4 porte manteau ouvre une trappe.
  A1 = porte menteaux deux ecoute
  A2 = porte menteaux trois ecoute
  A3 = porte menteaux quatre ecoute
+
 ```
 * communication
 
 ```
 A4 = sda connexion
 A5 = scl connexion
+gnd = connexion au gnd
+
 ```
 
 ####  définir les valeurs des capteur
@@ -45,3 +48,13 @@ A5 = scl connexion
   4. ouvrir le __traceur série__ en cliquant sur __outils__ puis __traceur série__.
 
       ![place sourie on traceur serie](./img_for_readme/place_sourie_on_traceur_serie.png)
+
+  5. change la valeur d'exemple  par la valeur voulue
+
+      ```
+      int p1[2] = {1010, 1028};
+      int p2[2] = {565,630};
+      int p3[2] = {1008,1022};
+      int p4[2] = {230,350};
+
+      ```

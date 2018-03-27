@@ -11,7 +11,7 @@ const int portemanteau2 = A1;
 const int portemanteau3 = A2;
 const int portemanteau4 = A3;
 
-int p1[2] = {1010, 1028}; //1020 1026
+int p1[2] = {1010, 1028};
 int p2[2] = {565,630};
 int p3[2] = {1008,1022};
 int p4[2] = {230,350};

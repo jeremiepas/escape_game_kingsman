@@ -48,12 +48,7 @@ void loop() {
 }
 
 void receiveData(int byteCount){
-
-//   while (1 < Wire.available()) { // loop through all but the last
-//    char c = Wire.read(); // receive byte as a character
-//    Serial.print(c);         // print the character
-//  }
-  x = Wire.read();    // receive byte as an integer
+  x = Wire.read();
   if (x == 1) {
     digitalWrite(trape, HIGH);
     delay(3000);

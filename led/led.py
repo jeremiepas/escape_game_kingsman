@@ -19,7 +19,7 @@ class LedRGB:
         self.green.ChangeDutyCycle(int(g / 255 * 100))
         self.blue.ChangeDutyCycle(int(b / 255 * 100))
     def dark(self):
-        self.red.stop()              # stop the red PWM output
+        self.red.stop()
         self.green.stop()
         self.blue.stop()
 
@@ -29,7 +29,7 @@ class LedRGB:
         self.blue.start(1)
 
     def destroy(self):
-        self.red.stop()              # stop the red PWM output
+        self.red.stop()
         self.green.stop()
         self.blue.stop()
         GPIO.cleanup()
