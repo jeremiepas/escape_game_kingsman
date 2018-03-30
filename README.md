@@ -12,4 +12,5 @@
 1. [trappe 1](/trape_1/#escape-game-guerande)
 1. [server web](https://github.com/jeremiepas/server_escape_game#server-game-mastering)
       1. [branchement](https://github.com/jeremiepas/server_escape_game#les-differente-connection)
-      2. [librairie utilise](https://github.com/jeremiepas/server_escape_game#librairie)
+      1. [lancement des service](https://github.com/jeremiepas/server_escape_game#déploiement)
+      1. [librairie utilise](https://github.com/jeremiepas/server_escape_game#lancement-du-server)
