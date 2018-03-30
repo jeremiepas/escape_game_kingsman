@@ -2,4 +2,4 @@
 
 cd /home/pi/escape_game_kingsman/enigme_3/
 
-python bot.py
+python3 bot.py

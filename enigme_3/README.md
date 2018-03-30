@@ -11,4 +11,4 @@
   * **lancement bot**
 ``` sh bot.sh ```
 ou
-``` bot.sh ```
+``` ./bot.sh ```
